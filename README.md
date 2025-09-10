@@ -1,0 +1,117 @@
+# BoxCommerce Signup Automation
+
+![Java](https://img.shields.io/badge/Java-21-orange?logo=java&logoColor=white)
+![Selenium](https://img.shields.io/badge/Selenium-4.16.0-43B02A?logo=selenium&logoColor=white)
+![TestNG](https://img.shields.io/badge/TestNG-7.11.0-blueviolet?logo=testng&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-Latest-C71A36?logo=apachemaven&logoColor=white)
+
+![Build Status](https://img.shields.io/github/actions/workflow/status/<your-username>/<your-repo>/maven.yml?branch=main)
+![License](https://img.shields.io/github/license/<your-username>/<your-repo>)
+![Last Commit](https://img.shields.io/github/last-commit/<your-username>/<your-repo>)
+
+## Project Overview
+This project contains a basic automation script for testing the **signup flow** on the BoxCommerce website:
+
+[Signup page link](https://dashboard-uat.boxcommerce.com/en-GB/auth/sign-up)
+
+The automation ensures that a user can successfully register using email and phone number.
+
+---
+
+## Framework, Tools, and Libraries Used
+
+| Tool / Library | Version | Purpose |
+|----------------|--------|---------|
+| **Java**       | 21     | Programming language for the automation scripts |
+| **Selenium**   | 4.16.0 | Automates browser interactions for testing the signup flow |
+| **TestNG**     | 7.11.0 | Test framework for organizing and running automated tests |
+| **ChromeDriver** | Latest | Browser driver for Chrome to run tests |
+| **Maven**      | Latest | Build and dependency management |
+
+**Why these tools:**
+- **Selenium** is widely used for web automation and allows interaction with dynamic elements.
+- **TestNG** provides annotations, assertions, and reporting features.
+- **Maven** simplifies dependency management and project setup.
+
+---
+
+Prerequisites
+
+Java 21 (https://www.oracle.com/java/technologies/downloads/) installed
+
+Maven (https://maven.apache.org/install.html) installed
+
+Google Chrome (https://www.google.com/chrome/) installed
+
+ChromeDriver (https://developer.chrome.com/docs/chromedriver/downloads) available in system PATH
+(or managed automatically with WebDriverManager if included in dependencies)
+
+## Project Structure
+
+BoxCommerceSignupTest/
+│
+├─ src/
+│ ├─ main/java/pages/SignupPage.java
+│ └─ main/java/SignupTestBoxCommerce/Main.java
+│ └─ test/java/base/BaseTest.java
+│ └─ test/java/tests/SignupTest.java
+│
+├─ pom.xml
+├─ README.md
+
+
+---
+
+## How to Run the Test
+
+1. **Clone the repository**
+```bash
+git clone <your-github-repo-link>
+cd BoxCommerceSignupTest
+
+mvn clean install
+
+mvn test
+```
+
+The test will:
+
+- Open the signup page in Chrome.
+
+- Close any popup if present.
+
+- Fill in first name, last name, country, phone, email, and password.
+
+- Submit the form and verify the success message.
+
+
+Viewing Test Results:
+
+- After running the test with:
+ 
+ mvn test
+
+TestNG reports are generated automatically by the Maven Surefire Plugin in the folder:
+
+target/surefire-reports/
+
+Inside this folder, you will find:
+
+index.html → A detailed report of the executed tests.
+
+emailable-report.html → A clean summary report that can be shared easily.
+
+To view results, simply open target/surefire-reports/emailable-report.html in a browser.
+
+Example test result screenshot:
+
+![Test Result Screenshot](assets/test-result.png)
+
+
+Notes:
+
+- Unique emails and phone numbers are generated for each test run to avoid conflicts.
+
+- Explicit waits ensure that dynamic elements like popups and buttons are fully rendered before interacting.
+
+- Logging/console prints help visualize each step of the signup process.
