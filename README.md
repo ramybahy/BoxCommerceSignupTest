@@ -8,7 +8,7 @@
 ## Project Overview
 This project contains a basic automation script for testing the **signup flow** on the BoxCommerce website:
 
-[Signup page link](https://dashboard-uat.boxcommerce.com/en-GB/auth/sign-up)
+<a href="https://dashboard-uat.boxcommerce.com/en-GB/auth/sign-up" target="_blank" rel="noopener noreferrer">Signup page link</a>
 
 The automation ensures that a user can successfully register using email and phone number.
 
@@ -52,6 +52,7 @@ BoxCommerceSignupTest/
 │ └─ test/java/base/BaseTest.java
 │ └─ test/java/tests/SignupTest.java
 │
+├─ LICENSE
 ├─ pom.xml
 ├─ README.md
 ```
@@ -62,7 +63,7 @@ BoxCommerceSignupTest/
 
 1. **Clone the repository**
 ```bash
-git clone <[your-github-repo-link](https://github.com/ramybahy/BoxCommerceSignupTest.git)>
+git clone https://github.com/ramybahy/BoxCommerceSignupTest.git
 cd BoxCommerceSignupTest
 
 mvn clean install
