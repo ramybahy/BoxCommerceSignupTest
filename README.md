@@ -8,7 +8,7 @@
 ## Project Overview
 This project contains a basic automation script for testing the **signup flow** on the BoxCommerce website:
 
-<a href="https://dashboard-uat.boxcommerce.com/en-GB/auth/sign-up" target="_blank" rel="noopener noreferrer">Signup page link</a>
+[Signup page link](https://dashboard-uat.boxcommerce.com/en-GB/auth/sign-up)
 
 The automation ensures that a user can successfully register using email and phone number.
 
