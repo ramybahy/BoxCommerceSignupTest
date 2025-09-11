@@ -79,18 +79,18 @@ git clone https://github.com/ramybahy/BoxCommerceSignupTest.git
 ```bash
 cd BoxCommerceSignupTest
 ```
-2. Run the tests
 
-From command line:
+You can run the tests in two ways:
 
-```bash
-mvn test
-```
-Or from IntelliJ:
+1. **Via Maven in IntelliJ (recommended if Maven is not installed globally)**  
+   - Open the Maven tool window in IntelliJ.  
+   - Navigate to `Lifecycle` → double-click `test`.  
+   - This will execute all tests and generate reports in `target/surefire-reports/`.
 
-Open the project
-
-Right-click SignupTest.java → Run 'SignupTest'
+2. **Via command line (if Maven is installed globally on your system PATH)**  
+   ```bash
+   mvn test
+   ```
 
 The test will:
 
