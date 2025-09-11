@@ -126,5 +126,4 @@ Example test result screenshot:
 ### Notes:
 - Unique emails and phone numbers are generated for each test run to avoid conflicts.  
 - Explicit waits ensure that dynamic elements such as popups and buttons are fully rendered before interaction.  
-- Logging/console outputs are used to trace and visualize each step of the signup process.  
-- The provided coupon code (`UATQA-DEMO`) was initially valid and tested successfully. It has since expired, but as the coupon field is optional, the automation script proceeds without it while still validating the mandatory fields and successful signup flow.
+- Logging/console outputs are used to trace and visualize each step of the signup process.
