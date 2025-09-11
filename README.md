@@ -39,8 +39,7 @@ Maven (https://maven.apache.org/install.html) installed
 
 Google Chrome (https://www.google.com/chrome/) installed
 
-ChromeDriver (https://developer.chrome.com/docs/chromedriver/downloads) available in system PATH
-(or managed automatically with WebDriverManager if included in dependencies)
+ChromeDriver is automatically managed by WebDriverManager.
 
 ## Project Structure
 ```
