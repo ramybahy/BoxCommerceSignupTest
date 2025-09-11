@@ -1,10 +1,11 @@
 package tests;
 
+import tests.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.SignupPage;
 import java.util.Random;
-import tests.BaseTest;
+
 public class SignupTest extends BaseTest {
 
     // Helper to generate a unique email per test run

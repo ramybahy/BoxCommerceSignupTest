@@ -1,11 +1,10 @@
 package tests;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
-
-import java.time.Duration;
 
 public class BaseTest {
 
@@ -13,6 +12,9 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp() {
+        // Automatically download and setup ChromeDriver
+        WebDriverManager.chromedriver().setup();
+
         // Initialize ChromeDriver
         driver = new ChromeDriver();
 
