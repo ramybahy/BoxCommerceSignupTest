@@ -73,6 +73,9 @@ BoxCommerceSignupTest/
 1. **Clone the repository**
 ```bash
 git clone https://github.com/ramybahy/BoxCommerceSignupTest.git
+```
+
+```bash
 cd BoxCommerceSignupTest
 ```
 2. Run the tests
