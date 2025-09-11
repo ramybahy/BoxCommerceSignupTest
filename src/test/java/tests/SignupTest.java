@@ -1,10 +1,11 @@
 package tests;
 
-import tests.BaseTest;
+import base.BaseTest;
+import pages.SignupPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.SignupPage;
 import java.util.Random;
+
 
 public class SignupTest extends BaseTest {
 
