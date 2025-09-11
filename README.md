@@ -27,6 +27,7 @@ The automation ensures that a user can successfully register using email and pho
 **Why these tools:**
 - **Selenium** is widely used for web automation and allows interaction with dynamic elements.
 - **TestNG** provides annotations, assertions, and reporting features.
+- **WebDriverManager** removes the need to manually download, set up, or maintain browser drivers (like ChromeDriver). It automatically manages the driver binaries, ensures version compatibility with the installed browser, and simplifies test execution across different environments.
 - **Maven** simplifies dependency management and project setup.
 
 ---
