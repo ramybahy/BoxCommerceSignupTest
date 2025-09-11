@@ -21,7 +21,7 @@ The automation ensures that a user can successfully register using email and pho
 | **Java**       | 21     | Programming language for the automation scripts |
 | **Selenium**   | 4.16.0 | Automates browser interactions for testing the signup flow |
 | **TestNG**     | 7.11.0 | Test framework for organizing and running automated tests |
-| **WebDriverManager** | 5.5.3 | Browser driver for Chrome to run tests |
+| **WebDriverManager** | 5.5.3 | Automatically manages browser drivers (Chrome in this project) |
 | **Maven**      | 3.9.9 | Build and dependency management |
 
 **Why these tools:**
@@ -74,11 +74,19 @@ BoxCommerceSignupTest/
 ```bash
 git clone https://github.com/ramybahy/BoxCommerceSignupTest.git
 cd BoxCommerceSignupTest
+```
+2. Run the tests
 
-mvn clean install
+From command line:
 
+```bash
 mvn test
 ```
+Or from IntelliJ:
+
+Open the project
+
+Right-click SignupTest.java → Run 'SignupTest'
 
 The test will:
 
