@@ -105,10 +105,8 @@ The test will:
 
 ### Viewing Test Results:
 
-- After running the test with:
+- After running the test:
  
- mvn test
-
 TestNG reports are generated automatically by the Maven Surefire Plugin in the folder:
 
 target/surefire-reports/
@@ -126,7 +124,7 @@ Example test result screenshot:
 ![Test Result Screenshot](assets/test-result.png)
 
 
-Notes:
+### Notes:
 
 - Unique emails and phone numbers are generated for each test run to avoid conflicts.
 
