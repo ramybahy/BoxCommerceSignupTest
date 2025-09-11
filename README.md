@@ -5,10 +5,6 @@
 ![TestNG](https://img.shields.io/badge/TestNG-7.11.0-blueviolet?logo=testng&logoColor=white)
 ![Maven](https://img.shields.io/badge/Maven-Latest-C71A36?logo=apachemaven&logoColor=white)
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/<your-username>/<your-repo>/maven.yml?branch=main)
-![License](https://img.shields.io/github/license/<your-username>/<your-repo>)
-![Last Commit](https://img.shields.io/github/last-commit/<your-username>/<your-repo>)
-
 ## Project Overview
 This project contains a basic automation script for testing the **signup flow** on the BoxCommerce website:
 
@@ -43,11 +39,10 @@ Maven (https://maven.apache.org/install.html) installed
 
 Google Chrome (https://www.google.com/chrome/) installed
 
-ChromeDriver (https://developer.chrome.com/docs/chromedriver/downloads) available in system PATH
-(or managed automatically with WebDriverManager if included in dependencies)
+ChromeDriver is automatically managed by WebDriverManager.
 
 ## Project Structure
-
+```
 BoxCommerceSignupTest/
 │
 ├─ src/
@@ -56,9 +51,10 @@ BoxCommerceSignupTest/
 │ └─ test/java/base/BaseTest.java
 │ └─ test/java/tests/SignupTest.java
 │
+├─ LICENSE
 ├─ pom.xml
 ├─ README.md
-
+```
 
 ---
 
@@ -66,7 +62,7 @@ BoxCommerceSignupTest/
 
 1. **Clone the repository**
 ```bash
-git clone <your-github-repo-link>
+git clone https://github.com/ramybahy/BoxCommerceSignupTest.git
 cd BoxCommerceSignupTest
 
 mvn clean install
