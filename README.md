@@ -3,7 +3,7 @@
 ![Java](https://img.shields.io/badge/Java-21-orange?logo=java&logoColor=white)
 ![Selenium](https://img.shields.io/badge/Selenium-4.16.0-43B02A?logo=selenium&logoColor=white)
 ![TestNG](https://img.shields.io/badge/TestNG-7.11.0-blueviolet?logo=testng&logoColor=white)
-![Maven](https://img.shields.io/badge/Maven-Latest-C71A36?logo=apachemaven&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-3.9.9-C71A36?logo=apachemaven&logoColor=white)
 
 ## Project Overview
 This project contains a basic automation script for testing the **signup flow** on the BoxCommerce website:
@@ -21,8 +21,8 @@ The automation ensures that a user can successfully register using email and pho
 | **Java**       | 21     | Programming language for the automation scripts |
 | **Selenium**   | 4.16.0 | Automates browser interactions for testing the signup flow |
 | **TestNG**     | 7.11.0 | Test framework for organizing and running automated tests |
-| **ChromeDriver** | Latest | Browser driver for Chrome to run tests |
-| **Maven**      | Latest | Build and dependency management |
+| **WebDriverManager** | 5.5.3 | Browser driver for Chrome to run tests |
+| **Maven**      | 3.9.9 | Build and dependency management |
 
 **Why these tools:**
 - **Selenium** is widely used for web automation and allows interaction with dynamic elements.
@@ -31,7 +31,7 @@ The automation ensures that a user can successfully register using email and pho
 
 ---
 
-Prerequisites
+## Prerequisites
 
 Java 21 (https://www.oracle.com/java/technologies/downloads/) installed
 
@@ -39,21 +39,31 @@ Maven (https://maven.apache.org/install.html) installed
 
 Google Chrome (https://www.google.com/chrome/) installed
 
-ChromeDriver is automatically managed by WebDriverManager.
+ChromeDriver is automatically handled by WebDriverManager — no manual setup required.
 
 ## Project Structure
 ```
 BoxCommerceSignupTest/
 │
 ├─ src/
-│ ├─ main/java/pages/SignupPage.java
-│ └─ main/java/SignupTestBoxCommerce/Main.java
-│ └─ test/java/base/BaseTest.java
-│ └─ test/java/tests/SignupTest.java
+│ ├─ main/
+│ │ └─ java/
+│ │ ├─ pages/
+│ │ │ └─ SignupPage.java
+│ │ └─ SignupTestBoxCommerce/
+│ │ └─ Main.java
+│ │
+│ └─ test/
+│ └─ java/
+│ ├─ base/
+│ │ └─ BaseTest.java
+│ └─ tests/
+│ └─ SignupTest.java
 │
 ├─ LICENSE
 ├─ pom.xml
 ├─ README.md
+├─ testng.xml
 ```
 
 ---
