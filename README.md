@@ -105,7 +105,7 @@ The test will:
 
 ### Viewing Test Results:
 
-- After running the test:
+After running the test:
  
 TestNG reports are generated automatically by the Maven Surefire Plugin in the folder:
 
