@@ -63,7 +63,7 @@ public class SignupPage {
 
         WebElement btn = wait.until(ExpectedConditions.visibilityOfElementLocated(signUpWithEmailBtn));
 
-        // Wait up to 2 seconds for the button to be clickable, retrying if needed
+        // Wait up to 3 seconds for the button to become clickable
         WebDriverWait shortWait = new WebDriverWait(driver, Duration.ofSeconds(3));
         shortWait.until(ExpectedConditions.elementToBeClickable(btn));
 
